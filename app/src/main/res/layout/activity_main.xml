@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tempView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AIR TEMP "
+        android:textSize="20sp"
+        android:layout_above="@id/safeunsafeindicator"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        android:layout_marginBottom="80dp"/>
+
+    <TextView
+        android:id="@+id/safeunsafeindicator"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/safe"
+        android:backgroundTint="@color/safe"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        />
+
+    <Button
+        android:id="@+id/alarmbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alarmstate"
+        android:layout_below="@id/safeunsafeindicator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:enabled="false"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/alarmbtn"/>
+
+
+
+</RelativeLayout>

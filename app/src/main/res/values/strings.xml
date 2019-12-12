@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gas Sensor</string>
+
+    <string name="safe">Safe</string>
+    <string name="unsafe">Unsafe</string>
+    <string name="alarmstate">Alarm Off</string>
+</resources>
